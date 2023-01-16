@@ -48,7 +48,7 @@ A similar mechanism is used to check for collision with paddle, which reverses t
 The main function here is update, which is used to handle computer-paddle. The position of computer-paddle can be set easily by making `position = ball.y`, but then the computer will never loose since the position of the computer paddle is updated instantly.  
 Instead we use a `MAX_SPEED` variable which is multipllied with delta and `ball.y - position`. This limits the maximum distance that can be travelled by the computer paddel in given time, giving player a chance to win. This also makes the computer paddle to travel fast/slow depending on the distance between ball and paddle's current position.
 
-For the player-paddle, mousemove event listener is used, which will set the position of player paddle to y value of curser.
+For the player-paddle, mousemove/touchmove event listener is used, which will set the position of player paddle to y value of curser.
 
 ***Loose :*** An isLose funcion is checked for every frame, which uses similar condition as collision, to check if the left or right wall are couched, and if so, the value of score for the opposite player is increased.
 

@@ -41,8 +41,14 @@ function handleLose() {
     computerPaddle.reset();
 }
 
+// for mouse
 document.addEventListener("mousemove", (e) => {
     playerPaddle.position = (e.y / window.innerHeight) * 100;
+});
+
+// for touchscreens
+document.addEventListener("touchmove", (e) => {
+    playerPaddle.position = (e.touches[0].clientY / window.innerHeight) * 100;
 });
 
 window.requestAnimationFrame(update);
