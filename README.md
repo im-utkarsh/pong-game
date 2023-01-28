@@ -57,5 +57,5 @@ The game is live [here](https://im-utkarsh.github.io/pong-game/).
 
 ---
 
-## References
+## 📚References
 https://www.youtube.com/watch?v=PeY6lXPrPaA
